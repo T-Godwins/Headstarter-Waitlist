@@ -70,7 +70,7 @@ export default function Home() {
         <Stack id="landing"
           width="100vw"
           sx={{
-            height:{md:"40vh", xs:"20vh", lg:"100vh"},
+            height:"100vh",
             p:{xs:0, md:10, lg:5}
           }}
           display="flex"
