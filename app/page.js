@@ -66,7 +66,7 @@ export default function Home() {
             Welcome to the Team!
           </Typography>
           <Typography variant="h5" gutterBottom p={1} sx={{ textAlign:"center", fontSize: {xs:'1rem', md:'2rem', lg:'3rem'}}} >
-            See what we're cooking next.
+            See what we&apos;re cooking next.
           </Typography>
           
           <Button variant="contained"
