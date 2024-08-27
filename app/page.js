@@ -239,6 +239,9 @@ export default function Home() {
               </Button>
             </Stack>
           </Box>
+          <Typography variant="h5" sx={{fontSize:"1px"}}>
+          Image by <a href="https://www.freepik.com/free-vector/halftone-background-with-circles_13295064.htm#query=abstract%20background&position=1&from_view=keyword&track=ais_hybrid&uuid=a162774f-e523-4f14-be20-cb38b9af490a">Freepik</a>
+        </Typography>
         </Stack>
       </Stack>
     </Box>
