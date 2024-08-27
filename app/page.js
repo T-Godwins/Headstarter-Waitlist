@@ -91,6 +91,7 @@ export default function Home() {
             alignItems="center"
             border="1px solid white"
             p={2}
+            sx={{borderRadius:"10px"}}
           >
             <Stack spacing ={2}>
               <TextField 
