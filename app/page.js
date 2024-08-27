@@ -86,6 +86,7 @@ export default function Home() {
               p={0} 
               sx={{ 
                 textAlign: "center", 
+                color:"white",
                 fontSize: { xs: '1.8rem', sm: '3rem', md: '5rem', lg: '7rem' },
                 transition: 'transform 0.3s ease, text-shadow 0.3s ease',
                 "&:hover": {
@@ -105,6 +106,7 @@ export default function Home() {
             gutterBottom 
             p={1} 
             sx={{ 
+              color:"white",
               textAlign:"center", fontSize: {xs:'1.2rem', sm:'1.8rem', md:'2rem', lg:'3rem',
               transition: 'transform 0.3s ease, text-shadow 0.3s ease',
                 "&:hover": {
@@ -128,6 +130,7 @@ export default function Home() {
             border="1px solid white"
             p={2}
             sx={{
+              color:"white",
               width:{lg:"35%", xs:"80%"},
               borderRadius:"10px", 
               transition: 'transform 0.3s ease, box-shadow 0.3s ease',  // Smooth transition for movement and shadow
