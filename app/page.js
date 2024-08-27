@@ -15,6 +15,7 @@ import {
   doc,
   setDoc,
 } from 'firebase/firestore';
+import GoogleAnalytics from "./analytics";
 
 export default function Home() {
   const [inventory, setInventory] = useState([])
@@ -40,6 +41,8 @@ export default function Home() {
   };
 
   return (
+    <div>
+      <head><GoogleAnalytics/></head>
     <Box id="background"
       display="flex"
       flexDirection="column"
@@ -170,5 +173,6 @@ export default function Home() {
         </Stack>
       </Stack>
     </Box>
+    </div>
   );
 }
