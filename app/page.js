@@ -17,6 +17,7 @@ import {
 } from 'firebase/firestore';
 import GoogleAnalytics from "./analytics";
 import Head from 'next/head';
+import Confetti from "react-confetti";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [suggestion, setSuggestion] = useState('')
+  const [showConfetti, setShowConfetti] = useState(false)
 
   
   // Function to handle adding an item to the waitlist
@@ -37,13 +39,20 @@ export default function Home() {
         email: email,
         suggestion: suggestion,
       });
-      alert('You have been added to the waitlist!');
+      // alert('You have been added to the waitlist!')
+      // Show confetti
+      setShowConfetti(true)
 
       // Clear the input fields after submission
       setFirstName('');
       setLastName('');
       setEmail('');
       setSuggestion('')
+
+      // Hide Confetti
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 5000) // disapear after 5 seconds
     } catch (error) {
       console.error("Error adding to waitlist: ", error);
       alert('There was an error adding you to the waitlist.');
@@ -68,6 +77,7 @@ export default function Home() {
         backgroundRepeat:'repeat-y',
       }}
     >
+      {showConfetti && <Confetti />} {/* Show confetti animation */}
       <Stack>
         <Stack id="landing"
           width="100vw"
