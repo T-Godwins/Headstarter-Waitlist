@@ -6,7 +6,7 @@ const GoogleAnalytics = () => {
     <>
         <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-HR3B6M6370`}
       />
        <script
           dangerouslySetInnerHTML={{
@@ -14,7 +14,7 @@ const GoogleAnalytics = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+            gtag('config', 'G-HR3B6M6370', {
               page_path: window.location.pathname,
             });
           `,
